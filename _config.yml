@@ -2,5 +2,13 @@ defaults:
   - scope:
       path: "pages"
     values:
-      permalink: /:basename
+      permalink: /:basename/
 
+url: "https://pabluoff.github.io"
+baseurl: "/mines-hack" 
+
+exclude:
+  - _site
+  - _config.yml
+  - genfile
+  - .git
