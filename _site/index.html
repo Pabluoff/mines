@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://kit.fontawesome.com/cd363fe7f3.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div id="welcome-lines">
+                <img src="img/IMG_7298.PNG" alt="Logo do aplicativo" class="logo">
+                <div id="welcome-line-1">Mine Hack</div>
+                <div id="welcome-line-2">Seja Bem-vindo, faça login</div>
+            </div>
+            <div class="input-container">
+                <ion-icon name="person-outline" class="input-icon"></ion-icon>
+                <input type="text" id="nome" class="custom-input" placeholder="Digite seu nome"
+                    style="margin-bottom: 18px;">
+            </div>
+
+            <div class="input-container">
+                <ion-icon name="mail-unread-outline" class="input-icon"></ion-icon>
+                <input type="email" id="email" class="custom-input" placeholder="Digite seu e-mail">
+            </div>
+            <button id="login-button" class="custom-button" onclick="verificarEmail()">
+                <span id="login-text">ENTRAR</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="loading"></div>
+            </button>
+            <p class="create-account">Ainda não tem conta?</p>
+            <a style="text-decoration: none;" id="create-account-button" class="create-account-button"
+                href="https://usegarnet.online">CRIE SUA CONTA</a>
+            <div id="bar"></div>
+        </div>
+    </div>
+    <div id="notification" class="notification">
+        <div class="notification-icon">
+            <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div class="notification-content">
+            <span id="notification-text" class="notification-text"></span>
+        </div>
+        <div class="close-notification" onclick="fecharNotificacao()">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <!-- Nova notificação para sucesso -->
+    <div id="notification-success" class="notification success">
+        <div class="notification-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="notification-content">
+            <span id="notification-success-text" class="notification-text"></span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
